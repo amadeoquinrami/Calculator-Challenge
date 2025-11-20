@@ -1,0 +1,39 @@
+body{
+   background-color: rgb(187, 167, 167);
+   display: grid;
+   justify-content: center;
+}
+
+.main-container { 
+    height: fit-content; 
+    width:fit-content;
+    /* might need to adjust the height  */
+} 
+ .main_btnDisplay {
+    display: grid;
+    border: 1rem solid rgb(197, 64, 64);
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px );
+    
+ }
+ .output_Screen {
+    grid-area: 1/1/2/5;
+    background-color: rgba(17, 177, 102, 0.449);
+ }
+ /*Responsive Design*/
+ /* change the px */
+ @media screen and (max-width: 100px){
+
+ }
+            /*^^^^small screen*/
+
+@media screen and (max-width:  300px){
+
+}
+            /*^^^^Medium screen*/
+
+@media screen and (max-width: 1500px){
+
+}
+
+            /*^^^^Larger Screen*/
