@@ -13,16 +13,71 @@ body{
     display: grid;
     border: 1rem solid rgb(197, 64, 64);
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(5, 100px );
+    grid-template-rows: repeat(7, 100px );
     
  }
  .output_Screen {
     grid-area: 1/1/2/5;
     background-color: rgba(17, 177, 102, 0.449);
  }
+ .backSpace{
+   grid-area: 2/2/2/5;
+ }
+ .seven{
+   grid-area: 3/1;
+ }
+ .eight {
+   grid-area: 3/2;
+ }
+ .nine {
+   grid-area: 3/3;
+ }
+ .four{
+   grid-area: 4/1;
+ }
+ .five {
+   grid-area: 4/2;
+}
+   .six{
+      grid-area: 4/3;
+   }
+   .one {
+      grid-area: 5/1/5/1;
+   }
+   .two{
+      grid-area: 5/2/5/2;
+   }
+   .three{
+      grid-area: 5/3/5/3;
+   }
+   .multiplication {
+      grid-area: 3/4/3/4;
+   }
+   .subtraction{
+      grid-area: 4/4/4/4;
+   }
+   .addition{
+      grid-area: 5/4/5/4;
+   }
+   .decimal{
+      grid-area: 6/1/6/1;
+   }
+   .zero{
+      grid-area: 6/2/6/2;
+   }
+   .equal {
+      grid-area: 6/3/6/5;
+   }
+   .clear {
+      grid-area: 7/1/7/5;
+   }
+
+
+
+ 
  /*Responsive Design*/
  /* change the px */
- @media screen and (max-width: 100px){
+ @media screen and (max-width: .1rem){
 
  }
             /*^^^^small screen*/
