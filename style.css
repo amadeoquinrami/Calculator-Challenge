@@ -20,55 +20,58 @@ body{
     grid-area: 1/1/2/5;
     background-color: rgba(17, 177, 102, 0.449);
  }
- .backSpace{
+ #division {
+   grid-area: 2/1;
+ }
+ #backSpace{
    grid-area: 2/2/2/5;
  }
- .seven{
+ #seven{
    grid-area: 3/1;
  }
- .eight {
+ #eight {
    grid-area: 3/2;
  }
- .nine {
+ #nine {
    grid-area: 3/3;
  }
- .four{
+ #four{
    grid-area: 4/1;
  }
- .five {
+ #five {
    grid-area: 4/2;
 }
-   .six{
+   #six{
       grid-area: 4/3;
    }
-   .one {
+   #one {
       grid-area: 5/1/5/1;
    }
-   .two{
+   #two{
       grid-area: 5/2/5/2;
    }
-   .three{
+   #three{
       grid-area: 5/3/5/3;
    }
-   .multiplication {
+   #multiplication {
       grid-area: 3/4/3/4;
    }
-   .subtraction{
+   #subtraction{
       grid-area: 4/4/4/4;
    }
-   .addition{
+   #addition{
       grid-area: 5/4/5/4;
    }
-   .decimal{
+   #decimal{
       grid-area: 6/1/6/1;
    }
-   .zero{
+   #zero{
       grid-area: 6/2/6/2;
    }
-   .equal {
+   #equal {
       grid-area: 6/3/6/5;
    }
-   .clear {
+   #clear {
       grid-area: 7/1/7/5;
    }
 
