@@ -12,17 +12,18 @@ Design the calculator with a grid-based layout that includes inputs for numbers 
 Ensure that the calculator is responsive and displays well on different screen sizes (mobile, tablet & desktop). -->
 <body>
     <header class="header">
-        <h1> Here to Calculate your basic Needs! </h1>
+        <h1> Calculate your basic Needs! </h1>
+        
     </header>
     <main class="main-container">
         <section class="main_btnDisplay">
+        
              <section class="output_Screen">
             <output class="screenOutput"></output> <!--NOt sure but thought of output first-->
-            </section>
-                <!-- maybe on clickinput -->
-                 <!--Maybe use input instead of of input. -->
-            <input type="button" value="÷" id="division" onclick="displayScreen('/','÷')"></input> <!--do this for the bottom-->
-            <input type="button" value="⌫" id="backSpace" onclick="backspace('⌫')"></input> <!--maybe do not displayScreen.....-->
+        </section>
+              
+            <input type="button" value="÷" id="division" onclick="displayScreen('/','÷')"></input> 
+            <input type="button" value="⌫" id="backSpace" onclick="backspace('⌫')"></input> 
             <input type="button" value="7" id="seven" onclick="displayScreen('7')"></input>
             <input type="button" value="8" id="eight" onclick="displayScreen('8')"></input>
             <input type="button" value="9" id="nine" onclick="displayScreen('9')"></input>
@@ -38,12 +39,13 @@ Ensure that the calculator is responsive and displays well on different screen s
             <input type="button" value="." id="decimal" onclick="displayScreen('.')"></input>
             <input type="button" value="0" id="0" onclick="displayScreen('0')"></input>
             <input type="button" value="=" id="equal" onclick="solve()"></input>
-            <input type="button" value="clear" id="clear" onclick="clearScreen('')"></input> <!--Not sure if it will know to clear-->
+            <input type="button" value="clear" id="clear" onclick="clearScreen('')"></input>
         </section>
 
     </main>
     <footer class="footer">
-        <h3>by Amadeo Ramirez</h3>    
+        <h3>by Amadeo Ramirez</h3>
+        <h3>© </h3>    
     </footer>
     <script src="style.js"></script>
 </body>

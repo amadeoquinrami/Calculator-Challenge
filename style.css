@@ -1,25 +1,80 @@
+    @font-face {
+        font-family: 'PokemonSolid'; /* Choose a name for your font */
+        src: url('fonts/PokemonSolid.woff2') format('woff2'),
+             url('fonts/PokemonSolid.woff') format('woff');
+        /* Add other formats like .ttf or .otf for broader browser support */
+        font-weight: normal;
+        font-style: normal;
+    }
 body{
    background-color: rgb(187, 167, 167);
    display: grid;
+   justify-content:center;
+   align-content:end;
+   background-color: #114e67;
+   font-family: 'PokemonSolid';
+}
+
+.header {
+   display: flex;
+   color: aliceblue;
+   font-family: 'PokemonSolid';
+   background-color: #96D9D6;
+   width: 50%;
    justify-content: center;
 }
 
-.main-container { 
-    height: fit-content; 
-    width:fit-content;
-    /* might need to adjust the height  */
-} 
+
  .main_btnDisplay {
     display: grid;
-    border: 1rem solid rgb(197, 64, 64);
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(7, 100px );
+    border: 1rem solid #96D9D6;
+    border-radius: 50%;
+    grid-template-columns: repeat(4, 1f);
+    grid-template-rows: auto;
+    /* margin-left: 2rem; */
+    width:90vw; /* new edit*/
+    max-width: 400px; /* new edits*/
+    font-size: clamp(14px, 4vw, 28px); /* new edits*/
+    /* background-image: ; */
     
- }
+   
+}
+.main_btnDisplay {
+   background-image: url(https://i.pinimg.com/originals/63/ac/97/63ac975f78cd87af32f0d31ac609f49a.gif);
+   background-size: 100% 100%;
+   padding: 20%;
+}
+
+ 
  .output_Screen {
-    grid-area: 1/1/2/5;
-    background-color: rgba(17, 177, 102, 0.449);
+   border: solid .2rem #114e67; /* this is the border*/
+   font-size:3rem; 
+   overflow: auto;
+   overflow-y: hidden;
+   grid-area: 1/1/2/5;
+   background-color:  #e4f9ff;
+   border-radius: 50%;
+   padding: 5%;
+   font-family: 'PokemonSolid';
  }
+.screenOutput{
+   color: #114e67;
+}
+ input {
+   color: white;
+   box-shadow: #114e67
+ }
+ input:hover {
+   background-color: #114e67;
+ }
+input {
+   font-size: 2rem;
+   background-color: #96D9D6;
+   border-radius: 45%;
+}
+input:hover{
+    border-radius: 25%;
+}
  #division {
    grid-area: 2/1;
  }
@@ -74,24 +129,87 @@ body{
    #clear {
       grid-area: 7/1/7/5;
    }
+   .footer {
+
+   }
 
 
+/* Small screens (phones) */
+@media screen and (max-width: 480px) {
+  .main-container { 
+    width: 90vw;
+    font-size: 4vw;
+    padding: 10px;
+   
+  }
 
- 
- /*Responsive Design*/
- /* change the px */
- @media screen and (max-width: .1rem){
-
- }
-            /*^^^^small screen*/
-
-@media screen and (max-width:  300px){
-
+  .main_btnDisplay {
+    display: grid;
+    border: .5rem solid #96D9D6;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    max-width: 400px; /* new edits*/
+    font-size: clamp(14px, 4vw, 28px); /* new edits*/
+  }
+  .header {
+   display: flex;
+   color: aliceblue;
+   font-family: 'PokemonSolid';
+   background-color: #96D9D6;
+   width: 480px;
+   padding: 2px;
+   margin-left: 10px;
 }
-            /*^^^^Medium screen*/
-
-@media screen and (max-width: 1500px){
-
 }
+/* ^^^ Small screen */
 
-            /*^^^^Larger Screen*/
+/* Medium screens (tablets) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .main-container { 
+    width: 60vw;
+    font-size: 2.5vw;
+   margin-left: 100px;
+   margin-top: 100px;
+  }
+  .main_btnDisplay {
+    display: grid;
+    border: 3rem solid #96D9D6;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 50px;
+  }
+  .header {
+   display: flex;
+   color: aliceblue;
+   font-family: 'PokemonSolid';
+   background-color: #96D9D6;
+   width: 1000px;
+   /* padding: 2px; */
+   /* margin-left: 10px; */
+}
+}
+/* ^^^ Medium screen */
+
+/* Large desktop screens */
+@media screen and (min-width: 1025px) {
+  .main-container { 
+    width: 100vw;
+    max-width: 900px;
+    font-size: 30px;
+    margin-left:500px;
+    margin-top: 100px;
+  }
+  .main_btnDisplay {
+    display: grid;
+    border: 4rem solid #96D9D6;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .header {
+   /* display: flex; */
+   color: aliceblue;
+   font-family: 'PokemonSolid';
+   background-color: #96D9D6;
+   width: 2025px;
+}
+}
