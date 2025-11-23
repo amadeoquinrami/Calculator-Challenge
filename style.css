@@ -1,24 +1,15 @@
-    @font-face {
-        font-family: 'PokemonSolid'; /* Choose a name for your font */
-        src: url('fonts/PokemonSolid.woff2') format('woff2'),
-             url('fonts/PokemonSolid.woff') format('woff');
-        /* Add other formats like .ttf or .otf for broader browser support */
-        font-weight: normal;
-        font-style: normal;
-    }
+  
 body{
    background-color: rgb(187, 167, 167);
    display: grid;
    justify-content:center;
    align-content:end;
    background-color: #114e67;
-   font-family: 'PokemonSolid';
 }
 
 .header {
    display: flex;
    color: aliceblue;
-   font-family: 'PokemonSolid';
    background-color: #96D9D6;
    width: 50%;
    justify-content: center;
@@ -55,7 +46,6 @@ body{
    background-color:  #e4f9ff;
    border-radius: 50%;
    padding: 5%;
-   font-family: 'PokemonSolid';
  }
 .screenOutput{
    color: #114e67;
@@ -129,8 +119,8 @@ input:hover{
    #clear {
       grid-area: 7/1/7/5;
    }
-   .footer {
-
+   .footer { 
+      color:aliceblue;
    }
 
 
@@ -154,7 +144,6 @@ input:hover{
   .header {
    display: flex;
    color: aliceblue;
-   font-family: 'PokemonSolid';
    background-color: #96D9D6;
    width: 480px;
    padding: 2px;
@@ -181,7 +170,6 @@ input:hover{
   .header {
    display: flex;
    color: aliceblue;
-   font-family: 'PokemonSolid';
    background-color: #96D9D6;
    width: 1000px;
    /* padding: 2px; */
@@ -208,7 +196,6 @@ input:hover{
   .header {
    /* display: flex; */
    color: aliceblue;
-   font-family: 'PokemonSolid';
    background-color: #96D9D6;
    width: 2025px;
 }
